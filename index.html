@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destiny Samuel | Professional Resume Writer</title>
+    <meta name="description" content="Portfolio of Destiny Samuel, a professional resume writer specializing in ATS-optimized resumes, LinkedIn profiles, cover letters, and career documents.">
+
+    <style>
+        /* =========================================================
+           1. GLOBAL STYLES
+           ========================================================= */
+        :root {
+            --navy: #10243e;
+            --deep-navy: #0a182b;
+            --slate: #526174;
+            --gold: #b38a45;
+            --cream: #f7f5f0;
+            --white: #ffffff;
+            --light-blue: #eef3f8;
+            --border: #dce3ea;
+            --text: #1d2a39;
+            --muted: #667383;
+            --shadow: 0 14px 35px rgba(16, 36, 62, 0.08);
+            --radius: 14px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.65;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-label {
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            color: var(--navy);
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .section-introduction {
+            max-width: 680px;
+            color: var(--muted);
+        }
+
+        /* =========================================================
+           2. HEADER / NAVIGATION
+           ========================================================= */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        .navigation {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-mark {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            border-radius: 8px;
+        }
+
+        .brand-name {
+            color: var(--navy);
+            font-weight: 800;
+            letter-spacing: 0.04em;
+        }
+
+        .brand-title {
+            display: block;
+            color: var(--muted);
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .navigation-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .navigation-links a {
+            color: var(--navy);
+            font-size: 0.86rem;
+            font-weight: 700;
+        }
+
+        .navigation-links a:hover {
+            color: var(--gold);
+        }
+
+        .navigation-toggle {
+            display: none;
+            border: 0;
+            background: transparent;
+            color: var(--navy);
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           3. HERO
+           ========================================================= */
+        .hero {
+            background: var(--cream);
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero-eyebrow {
+            color: var(--gold);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .hero-title {
+            color: var(--deep-navy);
+            font-size: clamp(2.8rem, 6vw, 5.2rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+            max-width: 720px;
+            margin-bottom: 25px;
+        }
+
+        .hero-title span {
+            color: var(--gold);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: var(--slate);
+            font-size: 1.08rem;
+            margin-bottom: 30px;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+
+        /* =========================================================
+           LINKEDIN ACTION LINKS
+           ========================================================= */
+        .linkedin-button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            min-height: 50px;
+            padding: 0 22px;
+            border: 1px solid var(--navy);
+            border-radius: 8px;
+            background: var(--navy);
+            color: var(--white);
+            font-weight: 800;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .linkedin-button:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .linkedin-button-light {
+            background: transparent;
+            color: var(--navy);
+        }
+
+        .linkedin-button-light:hover {
+            background: var(--light-blue);
+        }
+
+        .contact-social-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .contact-social-note {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .primary-button,
+        .secondary-button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px;
+            padding: 0 22px;
+            border-radius: 8px;
+            font-weight: 800;
+            transition: 0.2s ease;
+        }
+
+        .primary-button {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .primary-button:hover {
+            background: var(--deep-navy);
+            transform: translateY(-1px);
+        }
+
+        .secondary-button {
+            border: 1px solid var(--navy);
+            color: var(--navy);
+            background: var(--white);
+        }
+
+        .secondary-button:hover {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        /* =========================================================
+           4. ABOUT
+           ========================================================= */
+        .about-content {
+            max-width: 850px;
+        }
+
+        .about-content p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 26px;
+        }
+
+        .highlight-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px;
+            background: var(--white);
+        }
+
+        .highlight-card strong {
+            display: block;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .highlight-card span {
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        /* =========================================================
+           5. SERVICES
+           ========================================================= */
+        .services-section {
+            background: var(--light-blue);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 42px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 28px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 25px rgba(16, 36, 62, 0.04);
+        }
+
+        .service-number {
+            color: var(--gold);
+            font-weight: 800;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            font-size: 1.18rem;
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 0.93rem;
+        }
+
+        /* =========================================================
+           6. RESUME LEVELS + PRICING
+           ========================================================= */
+        .resume-levels-introduction {
+            margin-top: 8px;
+            max-width: 760px;
+        }
+
+        .resume-levels-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .resume-level-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .resume-level-card.featured {
+            border-color: var(--gold);
+        }
+
+        .resume-level-number {
+            color: var(--gold);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .resume-level-card h3 {
+            color: var(--navy);
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+
+        .resume-level-price {
+            color: var(--gold);
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .resume-level-note {
+            color: var(--slate);
+            font-size: 0.94rem;
+            line-height: 1.7;
+        }
+
+        .resume-level-card.featured::before {
+            content: "Popular";
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: var(--navy);
+            color: var(--white);
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .pricing-note {
+            margin-top: 28px;
+            padding: 18px 20px;
+            border-left: 3px solid var(--gold);
+            background: var(--cream);
+            color: var(--slate);
+            font-size: 0.9rem;
+        }
+
+        /* =========================================================
+           7. PROCESS + WHY WORK WITH ME
+           ========================================================= */
+        .process-and-benefits {
+            background: var(--cream);
+        }
+
+        .process-benefits-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 70px;
+        }
+
+        .process-list {
+            margin-top: 35px;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 18px;
+            padding-bottom: 26px;
+        }
+
+        .process-step-number {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--navy);
+            color: var(--white);
+            display: grid;
+            place-items: center;
+            font-size: 0.82rem;
+            font-weight: 800;
+        }
+
+        .process-step h3 {
+            color: var(--navy);
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .process-step p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .benefits-card {
+            background: var(--navy);
+            color: var(--white);
+            border-radius: 16px;
+            padding: 35px;
+            align-self: start;
+        }
+
+        .benefits-card h2 {
+            margin-bottom: 25px;
+        }
+
+        .benefit-list {
+            list-style: none;
+        }
+
+        .benefit-list li {
+            padding: 11px 0 11px 26px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            position: relative;
+            color: #edf2f7;
+        }
+
+        .benefit-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #d7b36b;
+            font-weight: 800;
+        }
+
+        /* =========================================================
+           8. RESOURCES
+           ========================================================= */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 40px;
+        }
+
+        .resource-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 25px;
+        }
+
+        .resource-card h3 {
+            color: var(--navy);
+            margin-bottom: 9px;
+        }
+
+        .resource-card p {
+            color: var(--muted);
+            font-size: 0.91rem;
+        }
+
+        /* =========================================================
+           9. FAQ
+           ========================================================= */
+        .faq-section {
+            background: var(--light-blue);
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 38px auto 0;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            border: 0;
+            background: var(--white);
+            color: var(--navy);
+            padding: 19px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .faq-answer {
+            display: none;
+            color: var(--muted);
+            padding: 0 22px 20px;
+            font-size: 0.93rem;
+        }
+
+        .faq-item.is-open .faq-answer {
+            display: block;
+        }
+
+        /* =========================================================
+           10. CONTACT
+           ========================================================= */
+        .contact-section {
+            background: var(--deep-navy);
+            color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 65px;
+            align-items: start;
+        }
+
+        .contact-section .section-label {
+            color: #d7b36b;
+        }
+
+        .contact-section .section-title {
+            color: var(--white);
+        }
+
+        .contact-introduction {
+            color: #c8d2de;
+            margin-bottom: 28px;
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 12px;
+        }
+
+        .contact-detail {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 12px;
+        }
+
+        .contact-detail span {
+            display: block;
+            color: #93a4b7;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 2px;
+        }
+
+        .contact-detail a,
+        .contact-detail strong {
+            color: var(--white);
+        }
+
+        .contact-form {
+            background: var(--white);
+            color: var(--text);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form h2 {
+            color: var(--navy);
+            margin-bottom: 5px;
+        }
+
+        .form-introduction {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 22px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        .form-field label {
+            display: block;
+            color: var(--navy);
+            font-size: 0.84rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
+            width: 100%;
+            border: 1px solid #ccd5df;
+            border-radius: 7px;
+            padding: 12px 13px;
+            color: var(--text);
+            background: #fbfcfd;
+            outline: none;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus,
+        .form-field textarea:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(179, 138, 69, 0.12);
+        }
+
+        .form-field textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            min-height: 50px;
+            border: 0;
+            border-radius: 7px;
+            background: var(--navy);
+            color: var(--white);
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background: var(--gold);
+        }
+
+        .form-note {
+            color: var(--muted);
+            font-size: 0.75rem;
+            margin-top: 9px;
+            text-align: center;
+        }
+
+        /* =========================================================
+           11. FOOTER
+           ========================================================= */
+        .site-footer {
+            background: #071323;
+            color: #aeb9c6;
+            padding: 26px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.82rem;
+        }
+
+        .footer-content strong {
+            color: var(--white);
+        }
+
+        /* =========================================================
+           12. RESPONSIVE STYLES
+           ========================================================= */
+        @media (max-width: 900px) {
+
+            .navigation-links {
+                display: none;
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                top: 70px;
+                background: var(--white);
+                border: 1px solid var(--border);
+                border-radius: 10px;
+                padding: 15px;
+                box-shadow: var(--shadow);
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .navigation-links.is-open {
+                display: flex;
+            }
+
+            .navigation-links a {
+                padding: 10px;
+            }
+
+            .navigation-toggle {
+                display: block;
+            }
+
+            .process-benefits-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .services-grid,
+            .resume-levels-grid,
+            .resources-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 620px) {
+
+            .container {
+                width: min(100% - 28px, 1120px);
+            }
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .hero-title {
+                font-size: 2.65rem;
+            }
+
+            .about-highlights,
+            .services-grid,
+            .resume-levels-grid,
+            .resources-grid,
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+         ========================================================= -->
+    <header class="site-header">
+        <div class="container navigation">
+
+            <a class="brand" href="#home" aria-label="Destiny Samuel home">
+
+                <span class="brand-mark">DS</span>
+
+                <span>
+                    <span class="brand-name">Destiny Samuel</span>
+                    <span class="brand-title">Professional Resume Writer</span>
+                </span>
+
+            </a>
+
+            <button
+                class="navigation-toggle"
+                id="navigationToggle"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+            <nav class="navigation-links" id="navigationLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#resume-levels">Pricing</a>
+                <a href="#process">Process</a>
+                <a href="#resources">Resources</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO SECTION
+             ===================================================== -->
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <p class="hero-eyebrow">
+                        Professional Resume Writer
+                    </p>
+
+                    <h1 class="hero-title">
+                        Your career deserves a <span>stronger story.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I help professionals, graduates, and career changers present
+                        their experience with clarity through ATS-focused resumes,
+                        LinkedIn profiles, and career documents.
+                    </p>
+
+                    <div class="button-row">
+
+                        <a
+                            class="primary-button"
+                            href="#resume-levels"
+                        >
+                            View Resume Levels & Pricing
+                        </a>
+
+                        <a
+                            class="secondary-button"
+                            href="#contact"
+                        >
+                            Contact Me
+                        </a>
+
+                        <a
+                            class="linkedin-button"
+                            href="https://www.linkedin.com/in/destiny-samuel-73907b429"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Destiny Samuel's LinkedIn profile"
+                        >
+                            View My LinkedIn
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT SECTION
+             ===================================================== -->
+        <section class="section" id="about">
+
+            <div class="container">
+
+                <div class="about-content">
+
+                    <p class="section-label">
+                        About Me
+                    </p>
+
+                    <h2 class="section-title">
+                        Turning experience into opportunity.
+                    </h2>
+
+                    <p>
+                        I'm Destiny Samuel, a professional resume writer focused
+                        on helping job seekers communicate their experience in
+                        a clear, compelling, and career-focused way.
+                    </p>
+
+                    <p>
+                        My approach is simple: understand the candidate,
+                        identify the strongest evidence of value, and turn
+                        that information into a resume that is easy for
+                        recruiters and applicant tracking systems to understand.
+                    </p>
+
+                    <div class="about-highlights">
+
+                        <div class="highlight-card">
+                            <strong>ATS Focused</strong>
+                            <span>
+                                Structured around relevant keywords and clear formatting.
+                            </span>
+                        </div>
+
+                        <div class="highlight-card">
+                            <strong>Achievement Driven</strong>
+                            <span>
+                                Experience is positioned around contribution and measurable impact.
+                            </span>
+                        </div>
+
+                        <div class="highlight-card">
+                            <strong>Tailored Writing</strong>
+                            <span>
+                                Documents are written around the individual's target direction.
+                            </span>
+                        </div>
+
+                        <div class="highlight-card">
+                            <strong>Professional Presentation</strong>
+                            <span>
+                                Clean documents designed for both humans and screening systems.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES SECTION
+             ===================================================== -->
+        <section class="section services-section" id="services">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Services
+                </p>
+
+                <h2 class="section-title">
+                    How I can help you.
+                </h2>
+
+                <p class="section-introduction">
+                    Career documents designed to present your experience clearly
+                    and position you for your next opportunity.
+                </p>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-number">01</div>
+                        <h3>ATS Resume Writing</h3>
+                        <p>
+                            Keyword-focused resumes built with clean structure,
+                            strong bullets, and recruiter-friendly content.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">02</div>
+                        <h3>Executive Resume Writing</h3>
+                        <p>
+                            High-impact resumes that communicate leadership,
+                            strategic responsibility, and measurable results.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">03</div>
+                        <h3>Entry-Level Resumes</h3>
+                        <p>
+                            Strong graduate and early-career resumes that turn
+                            education, projects, internships, and skills into value.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">04</div>
+                        <h3>Career Change Resumes</h3>
+                        <p>
+                            Resumes that emphasize transferable skills and position
+                            previous experience for a new direction.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">05</div>
+                        <h3>LinkedIn Optimization</h3>
+                        <p>
+                            Professional LinkedIn content designed to strengthen
+                            positioning and attract relevant opportunities.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">06</div>
+                        <h3>Cover Letter Writing</h3>
+                        <p>
+                            Targeted cover letters that connect your experience,
+                            motivation, and fit with the opportunity.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESUME LEVELS + PRICING SECTION
+             ===================================================== -->
+        <section class="section" id="resume-levels">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Resume Levels
+                </p>
+
+                <h2 class="section-title">
+                    The right resume strategy for your career stage.
+                </h2>
+
+                <p class="section-introduction resume-levels-introduction">
+                    Every career stage requires a different approach. I tailor
+                    the depth, positioning, achievements, keywords, and overall
+                    strategy of your resume to match where you are now and
+                    where you want to go next.
+                </p>
+
+                <div class="resume-levels-grid">
+
+                    <article class="resume-level-card">
+
+                        <div class="resume-level-number">
+                            Level 01
+                        </div>
+
+                        <h3>
+                            Entry-Level / Graduate
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $100+
+                        </p>
+
+                        <p class="resume-level-note">
+                            You may not have years of experience yet, but you
+                            still have value to communicate. Your education,
+                            internships, projects, skills, achievements, and
+                            potential are positioned into a focused resume
+                            that helps employers see what you can contribute.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resume-level-card featured">
+
+                        <div class="resume-level-number">
+                            Level 02
+                        </div>
+
+                        <h3>
+                            Mid-Level Professional
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $200+
+                        </p>
+
+                        <p class="resume-level-note">
+                            At this stage, simply listing responsibilities is
+                            no longer enough. Your resume should show progression,
+                            ownership, measurable results, and the skills that
+                            make you valuable in your field—not just describe
+                            what you were asked to do.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resume-level-card">
+
+                        <div class="resume-level-number">
+                            Level 03
+                        </div>
+
+                        <h3>
+                            Senior-Level Professional
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $300+
+                        </p>
+
+                        <p class="resume-level-note">
+                            Senior professionals need a resume that communicates
+                            influence and depth. I focus on high-value achievements,
+                            complex responsibilities, leadership, strategic
+                            contributions, and the evidence that separates you
+                            from other experienced candidates.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resume-level-card">
+
+                        <div class="resume-level-number">
+                            Level 04
+                        </div>
+
+                        <h3>
+                            Managerial / Director
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $400+
+                        </p>
+
+                        <p class="resume-level-note">
+                            Your resume should make your leadership impossible
+                            to overlook. The focus shifts toward teams, budgets,
+                            operational scale, business improvements, strategic
+                            decisions, stakeholder management, and measurable
+                            organizational impact.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resume-level-card">
+
+                        <div class="resume-level-number">
+                            Level 05
+                        </div>
+
+                        <h3>
+                            Executive / C-Suite
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $600+
+                        </p>
+
+                        <p class="resume-level-note">
+                            Executive resumes are not extended versions of ordinary
+                            resumes. They must communicate leadership vision,
+                            business impact, strategic authority, transformation,
+                            and the value you bring at the highest level—quickly
+                            and convincingly.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resume-level-card">
+
+                        <div class="resume-level-number">
+                            Level 06
+                        </div>
+
+                        <h3>
+                            Career Change
+                        </h3>
+
+                        <p class="resume-level-price">
+                            $300+
+                        </p>
+
+                        <p class="resume-level-note">
+                            Changing careers requires more than changing a job title.
+                            I identify transferable strengths and reshape your
+                            experience so recruiters can understand why your
+                            background makes sense for the new direction you are targeting.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <p class="pricing-note">
+                    <strong>Pricing note:</strong>
+                    These are starting ranges, not rigid prices. Your final quote
+                    depends on career level, resume length, complexity, research
+                    required, turnaround time, and whether additional documents
+                    or LinkedIn optimization are included.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROCESS + WHY WORK WITH ME
+             ===================================================== -->
+        <section class="section process-and-benefits" id="process">
+
+            <div class="container process-benefits-grid">
+
+                <div>
+
+                    <p class="section-label">
+                        My Process
+                    </p>
+
+                    <h2 class="section-title">
+                        How we work together.
+                    </h2>
+
+                    <p class="section-introduction">
+                        A clear process designed to keep the writing focused
+                        on your career goals.
+                    </p>
+
+                    <div class="process-list">
+
+                        <div class="process-step">
+                            <div class="process-step-number">01</div>
+
+                            <div>
+                                <h3>Discovery</h3>
+                                <p>
+                                    Understand your experience, target roles,
+                                    strengths, and career direction.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="process-step">
+                            <div class="process-step-number">02</div>
+
+                            <div>
+                                <h3>Strategy</h3>
+                                <p>
+                                    Identify the strongest achievements,
+                                    keywords, and positioning opportunities.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="process-step">
+                            <div class="process-step-number">03</div>
+
+                            <div>
+                                <h3>Writing</h3>
+                                <p>
+                                    Build concise, achievement-focused content
+                                    tailored to the target direction.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="process-step">
+                            <div class="process-step-number">04</div>
+
+                            <div>
+                                <h3>Review</h3>
+                                <p>
+                                    Refine the document for clarity, consistency,
+                                    ATS readability, and professional tone.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="process-step">
+                            <div class="process-step-number">05</div>
+
+                            <div>
+                                <h3>Delivery</h3>
+                                <p>
+                                    Receive the finished career document ready
+                                    for applications and professional use.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <aside class="benefits-card">
+
+                    <h2>
+                        Why work with me?
+                    </h2>
+
+                    <ul class="benefit-list">
+
+                        <li>
+                            ATS-focused resume structure
+                        </li>
+
+                        <li>
+                            Achievement-driven writing
+                        </li>
+
+                        <li>
+                            Relevant career keywords
+                        </li>
+
+                        <li>
+                            Tailored content rather than generic templates
+                        </li>
+
+                        <li>
+                            Clean and professional formatting
+                        </li>
+
+                        <li>
+                            Clear communication throughout the process
+                        </li>
+
+                    </ul>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESOURCES SECTION
+             ===================================================== -->
+        <section class="section" id="resources">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Career Resources
+                </p>
+
+                <h2 class="section-title">
+                    Practical career guidance.
+                </h2>
+
+                <p class="section-introduction">
+                    Short, useful insights for job seekers who want stronger
+                    career documents.
+                </p>
+
+                <div class="resources-grid">
+
+                    <article class="resource-card">
+
+                        <h3>
+                            What makes a resume ATS-friendly?
+                        </h3>
+
+                        <p>
+                            Learn how structure, keywords, formatting, and relevance
+                            can affect how a resume is read by screening systems.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resource-card">
+
+                        <h3>
+                            Write bullets around impact.
+                        </h3>
+
+                        <p>
+                            Strong resume bullets show what you contributed,
+                            how you contributed, and what changed as a result.
+                        </p>
+
+                    </article>
+
+
+                    <article class="resource-card">
+
+                        <h3>
+                            Make LinkedIn work with your resume.
+                        </h3>
+
+                        <p>
+                            Your resume and LinkedIn profile should tell a consistent
+                            professional story without simply copying each other.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAQ SECTION
+             ===================================================== -->
+        <section class="section faq-section" id="faq">
+
+            <div class="container">
+
+                <p class="section-label">
+                    FAQ
+                </p>
+
+                <h2 class="section-title">
+                    Questions you may have.
+                </h2>
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            Do you write ATS-friendly resumes?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            Yes. The resume structure is designed to be readable
+                            by applicant tracking systems while remaining clear
+                            and persuasive to recruiters.
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            Can you rewrite an existing resume?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            Yes. An existing resume can be reviewed, restructured,
+                            rewritten, and repositioned around the client's target roles.
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            Do you work with different career levels?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            Yes. Resume strategy can be adapted for graduates,
+                            early-career professionals, mid-career candidates,
+                            career changers, and executives.
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+                            Can you optimize my LinkedIn profile too?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            Yes. LinkedIn optimization can complement the resume
+                            by strengthening your headline, About section,
+                            experience, skills, and overall positioning.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT SECTION
+             ===================================================== -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container contact-grid">
+
+                <div>
+
+                    <p class="section-label">
+                        Get In Touch
+                    </p>
+
+                    <h2 class="section-title">
+                        Let's build a stronger career profile together.
+                    </h2>
+
+                    <p class="contact-introduction">
+                        Have a question or ready to discuss your resume?
+                        Send a message with a few details about what you need,
+                        and I'll get back to you.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <span>Email</span>
+
+                            <a href="mailto:destinysamuelofficial1@gmail.com">
+                                destinysamuelofficial1@gmail.com
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>Phone</span>
+
+                            <a href="tel:+2348133788879">
+                                08133788879
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>WhatsApp</span>
+
+                            <a
+                                href="https://wa.me/2348133788879"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Chat on WhatsApp
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>LinkedIn</span>
+
+                            <a
+                                href="https://www.linkedin.com/in/destiny-samuel-73907b429"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                linkedin.com/in/destiny-samuel-73907b429
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-social-actions">
+
+                        <a
+                            class="linkedin-button"
+                            href="https://www.linkedin.com/in/destiny-samuel-73907b429"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Destiny Samuel's LinkedIn profile"
+                        >
+                            View My LinkedIn Profile
+                        </a>
+
+
+                        <a
+                            class="linkedin-button linkedin-button-light"
+                            href="https://wa.me/2348133788879"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Message Me on WhatsApp
+                        </a>
+
+                    </div>
+
+
+                    <p class="contact-social-note">
+                        Want to learn more about my professional background?
+                        You can view my LinkedIn profile before reaching out.
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="contact-form"
+                    id="contactForm"
+                >
+
+                    <h2>
+                        Send me a message
+                    </h2>
+
+                    <p class="form-introduction">
+                        Please complete the short form below.
+                        Required fields are marked with *.
+                    </p>
+
+
+                    <div class="form-row">
+
+                        <div class="form-field">
+
+                            <label for="fullName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                id="fullName"
+                                name="fullName"
+                                type="text"
+                                autocomplete="name"
+                                placeholder="Your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="emailAddress">
+                                Email Address *
+                            </label>
+
+                            <input
+                                id="emailAddress"
+                                name="emailAddress"
+                                type="email"
+                                autocomplete="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="requestedService">
+                            What do you need help with? *
+                        </label>
+
+                        <select
+                            id="requestedService"
+                            name="requestedService"
+                            required
+                        >
+
+                            <option value="" selected disabled>
+                                Select a service
+                            </option>
+
+                            <option value="Entry-Level / Graduate Resume">
+                                Entry-Level / Graduate Resume
+                            </option>
+
+                            <option value="Mid-Level Professional Resume">
+                                Mid-Level Professional Resume
+                            </option>
+
+                            <option value="Senior-Level Professional Resume">
+                                Senior-Level Professional Resume
+                            </option>
+
+                            <option value="Managerial / Director Resume">
+                                Managerial / Director Resume
+                            </option>
+
+                            <option value="Executive / C-Suite Resume">
+                                Executive / C-Suite Resume
+                            </option>
+
+                            <option value="Career Change Resume">
+                                Career Change Resume
+                            </option>
+
+                            <option value="LinkedIn Optimization">
+                                LinkedIn Optimization
+                            </option>
+
+                            <option value="Cover Letter Writing">
+                                Cover Letter Writing
+                            </option>
+
+                            <option value="Resume Review">
+                                Resume Review
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="message">
+                            Tell me about your needs *
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Briefly describe your current situation, target role, and what you'd like help with."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="form-submit"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+
+                    <p class="form-note">
+                        This GitHub Pages version opens your email app to send
+                        the message. A server-based form can be connected later.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                © <span id="currentYear"></span>
+                <strong>Destiny Samuel</strong>.
+                All rights reserved.
+            </div>
+
+            <div>
+                Professional Resume Writer ·
+                ATS-Focused Career Documents ·
+
+                <a
+                    href="https://www.linkedin.com/in/destiny-samuel-73907b429"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        /* =========================================================
+           1. MOBILE NAVIGATION
+           ========================================================= */
+
+        const navigationToggle =
+            document.getElementById("navigationToggle");
+
+        const navigationLinks =
+            document.getElementById("navigationLinks");
+
+
+        navigationToggle.addEventListener("click", function () {
+
+            navigationLinks.classList.toggle("is-open");
+
+        });
+
+
+        document
+            .querySelectorAll(".navigation-links a")
+            .forEach(function (navigationLink) {
+
+                navigationLink.addEventListener("click", function () {
+
+                    navigationLinks.classList.remove("is-open");
+
+                });
+
+            });
+
+
+        /* =========================================================
+           2. FAQ ACCORDION
+           ========================================================= */
+
+        document
+            .querySelectorAll(".faq-question")
+            .forEach(function (faqQuestion) {
+
+                faqQuestion.addEventListener("click", function () {
+
+                    const faqItem =
+                        faqQuestion.parentElement;
+
+                    const isCurrentlyOpen =
+                        faqItem.classList.contains("is-open");
+
+
+                    document
+                        .querySelectorAll(".faq-item")
+                        .forEach(function (item) {
+
+                            item.classList.remove("is-open");
+
+                            item
+                                .querySelector(".faq-question span")
+                                .textContent = "+";
+
+                        });
+
+
+                    if (!isCurrentlyOpen) {
+
+                        faqItem.classList.add("is-open");
+
+                        faqQuestion
+                            .querySelector("span")
+                            .textContent = "−";
+
+                    }
+
+                });
+
+            });
+
+
+        /* =========================================================
+           3. CONTACT FORM
+           GitHub Pages is a static host, so this version prepares
+           the message and opens the visitor's email application.
+           ========================================================= */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const portfolioEmailAddress =
+            "destinysamuelofficial1@gmail.com";
+
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            const visitorName =
+                document.getElementById("fullName")
+                .value
+                .trim();
+
+
+            const visitorEmail =
+                document.getElementById("emailAddress")
+                .value
+                .trim();
+
+
+            const requestedService =
+                document.getElementById("requestedService")
+                .value;
+
+
+            const visitorMessage =
+                document.getElementById("message")
+                .value
+                .trim();
+
+
+            const emailSubject =
+                encodeURIComponent(
+                    "Portfolio Inquiry - " + requestedService
+                );
+
+
+            const emailBody =
+                encodeURIComponent(
+                    "Name: " + visitorName + "\n" +
+                    "Email: " + visitorEmail + "\n" +
+                    "Service: " + requestedService + "\n\n" +
+                    "Message:\n" + visitorMessage
+                );
+
+
+            window.location.href =
+                "mailto:" +
+                portfolioEmailAddress +
+                "?subject=" +
+                emailSubject +
+                "&body=" +
+                emailBody;
+
+        });
+
+
+        /* =========================================================
+           4. CURRENT YEAR
+           ========================================================= */
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
